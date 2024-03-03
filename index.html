@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="app.js" defer></script>
+</head>
+
+<body class="
+  bg-orange-500
+">
+  <header class="flex flex-col items-center space-y-2 p-2">
+    <h1 class="
+      text-4xl 
+      font-semibold 
+      text-orange-100
+      uppercase
+    ">
+      Todo List App
+    </h1>
+    <p class="text-orange-200 text-xl text-center">
+      Agrega tus tareas a la lista para que
+      recuerdes lo que tienes pendiente por hacer.
+    </p>
+  </header>
+
+  <main class="
+    my-4 
+    mx-auto 
+    w-[90%] 
+    md:w-[70%] 
+    bg-white 
+    rounded-lg 
+    shadow-md
+    py-2
+    px-2
+  ">
+    <div class="flex justify-start items-center px-2">
+      <h2 class="
+      text-xl
+      font-semibold
+      text-gray-600
+      ">Añade tú Tarea</h2>
+      <img class="overflow-hidden w-9" src="images/icon.png" alt="Todo Icon">
+    </div>
+
+    <hr class="h-px my-2 border-0 bg-gray-400">
+
+    <div id="container" class="px-2 my-2">
+      <div class="
+        mx-auto 
+        flex
+        justify-center
+        items-center
+        w-[100%]
+        h-[10%]
+        bg-gray-200
+        mt-4
+        rounded-full
+        " id="form-container">
+        <input class="
+            flex-1
+            border-none
+            outline-none
+            w-[100%]
+            p-4
+            bg-transparent
+            font-light
+            placeholder-gray-400
+          " type="text" id="input-box" placeholder="Añade tú Tarea">
+
+        <button id="btn-add" class="
+              border-none
+              outline-none
+              px-12
+              py-4
+              bg-orange-500
+              transition
+              hover:bg-orange-700
+              text-white
+              font-semibold
+              cursor-pointer
+              rounded-full
+              overflow-hidden
+            " type="submit">
+          Añadir
+        </button>
+      </div>
+    </div>
+
+    <h2 class="
+      my-4
+      text-xl
+      font-semibold
+      text-gray-600
+    ">
+      Lista de tareas
+    </h2>
+
+    <hr class="h-px my-2 border-0 bg-gray-400">
+
+    <ul id="list-tasks" class="mt-4 py-2 px-2 space-y-4">
+      <!-- <li class="
+        flex
+        justify-between
+        items-center
+        pr-2 
+        py-3 
+        pl-[50px]
+        rounded-md 
+        shadow-lg 
+        border 
+        border-orange-400
+        hover:-translate-y-2
+        transition
+        cursor-pointer
+        text-sm
+        select-none
+        relative
+        before:content-['']
+        before:absolute
+        before:h-7
+        before:w-7
+        before:rounded-[50%]
+        before:bg-[url('/images/checked.png')]
+        before:bg-cover
+        before:bg-center
+        before:top-3
+        before:left-2
+        
+      ">
+
+        <h3 class="text-base font-semibold text-gray-700 line-through">
+          Tarea
+        </h3>
+
+        <button class="
+          border
+          border-red-700
+          bg-red-100
+          text-red-700
+          rounded-md
+          px-2
+          py-1
+          font-semibold
+          text-center
+          hover:bg-red-400
+          hover:text-white
+          transition
+        ">
+          Eliminar
+        </button>
+      </li>
+      <li class="
+        flex
+        justify-between
+        items-center
+        pr-2 
+        py-3 
+        pl-[50px]
+        rounded-md 
+        shadow-lg 
+        border 
+        border-orange-400
+        hover:-translate-y-2
+        transition
+        cursor-pointer
+        text-sm
+        select-none
+        relative
+        before:content-['']
+        before:absolute
+        before:h-7
+        before:w-7
+        before:rounded-[50%]
+        before:bg-[url('/images/unchecked.png')]
+        before:bg-cover
+        before:bg-center
+        before:top-3
+        before:left-2
+      ">
+
+        <h3 class="text-base font-semibold text-gray-600">
+          Tarea
+        </h3>
+
+        <button class="
+          border
+          border-red-700
+          bg-red-100
+          text-red-700
+          rounded-md
+          px-2
+          py-1
+          font-semibold
+          text-center
+          hover:bg-red-400
+          hover:text-white
+          transition
+        ">
+          Eliminar
+        </button>
+      </li> -->
+    </ul>
+  </main>
+</body>
+
+</html>
