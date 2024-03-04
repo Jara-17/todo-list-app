@@ -136,7 +136,7 @@ function addTask() {
  @param {*} msg El mensaje de la alerta
  @param {*} type El tipo de alerta
  */
-function preintAlert(msg, type) {
+function preintAlert(msg = "", type = "") {
   //? Crear el div
   const alert = document.createElement("p");
   alert.classList.add("text-center", "py-2", "border", "rounded-md", "my-2");
@@ -156,16 +156,6 @@ function preintAlert(msg, type) {
   setTimeout(() => {
     alert.remove();
   }, 3000);
-}
-
-/**
- ** Función para limpiar el html previo
- *  */
-function cleanHtml() {
-  //? limpiar el HTML
-  while (listTasks.firstChild) {
-    listTasks.removeChild(listTasks.firstChild);
-  }
 }
 
 /**
